@@ -1,4 +1,6 @@
 # api-docs
+[![Build Status](https://travis-ci.org/philcockfield/api-docs.svg)](https://travis-ci.org/philcockfield/api-docs)
+
 Connect middleware for serving API documentation.
 
 
