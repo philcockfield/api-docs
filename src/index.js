@@ -1,1 +1,2 @@
-console.log("Started [api-docs]\n");
+require("babel/register")({ stage: 1 });
+require("./server");
