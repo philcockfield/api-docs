@@ -1,4 +1,5 @@
-import ReactServerPages from "react-server-pages";
+import ReactMiddleware from "react-middleware";
 
-const middleware = ReactServerPages({ base:"./src/site" });
+const middleware = ReactMiddleware({ base:"./src/site" });
+// middleware.init();
 middleware.start({ port: 3030 });
