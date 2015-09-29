@@ -1,2 +1,4 @@
 import ReactMiddleware from "react-middleware";
-export default ReactMiddleware({ base:"./src/site" });
+
+const middleware = ReactMiddleware({ base:"./src" });
+export default middleware;

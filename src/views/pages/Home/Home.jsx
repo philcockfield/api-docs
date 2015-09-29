@@ -12,6 +12,7 @@ export default class Home extends React.Component {
 
     return (
       <div className="Home">
+        api
         <script type="text/javascript" src="/js/page/Home"/>
       </div>
     );
