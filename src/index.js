@@ -1,2 +1,2 @@
-require("babel/register")({ stage: 1 });
-require("./server");
+import ReactMiddleware from "react-middleware";
+export default ReactMiddleware({ base:"./src/site" });
