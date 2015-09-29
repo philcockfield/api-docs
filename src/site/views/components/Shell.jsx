@@ -9,13 +9,18 @@ import Method from "./Method";
  */
 export default class Shell extends React.Component {
   render() {
-    let { manifest } = this.props;
-    let methodItems = Object.keys(manifest.methods).map((key, i) => {
-        let value = manifest.methods[key];
-        return <li key={i}>
-                 <Method method={ value }/>
-               </li>;
-    });
+    const { manifest } = this.props;
+    let methodItems;
+
+    if (manifest && manifest.methods) {
+      methodItems = Object.keys(manifest.methods).map((key, i) => {
+          let value = manifest.methods[key];
+          return <li key={i}>
+                   <Method method={ value }/>
+                 </li>;
+      });
+    }
+
 
     return (
       <div className="shell">
@@ -28,3 +33,7 @@ export default class Shell extends React.Component {
     );
   }
 }
+
+
+Shell.propTypes = {};
+Shell.defaultProps = {};
