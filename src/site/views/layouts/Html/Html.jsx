@@ -11,7 +11,9 @@ export default class Html extends React.Component {
         <head>
           <title>{ this.props.title }</title>
           <meta charSet="utf-8"/>
+          <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
           <link href="/css/common" rel="stylesheet"/>
+          <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic" rel="stylesheet" type="text/css"/>
         </head>
         <body>
           <div id="root">{ this.props.body }</div>
@@ -21,6 +23,11 @@ export default class Html extends React.Component {
     );
   }
 }
+
+
+
+
+
 
 // API -------------------------------------------------------------------------
 Html.propTypes = {
